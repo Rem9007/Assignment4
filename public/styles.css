@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Style pour le titre h1 */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+
+}
+
+#numberInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#getFactButton {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#factResult {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #3498DB;
+}
+
+a:hover {
+  color: #E74C3C;
+}
+
