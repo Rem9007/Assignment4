@@ -1,44 +1,36 @@
-/* styles.css */
-
-/* Style for the body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2; /* Light gray background */
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
-/* Style for the title h1 */
 h1 {
-  color: #3498DB; /* Blue text color */
+  color: #3498DB;
   margin-top: 30px;
 }
 
-/* Style for the text */
 body > p {
   font-size: 18px;
-  color: #333; /* Dark gray text color */
+  color: #333; 
 }
 
-/* Style for the link */
 a {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: #E74C3C; /* Red text color */
+  color: #E74C3C;
   text-decoration: none;
   margin: 10px auto;
   width: 200px;
   padding: 10px;
-  background-color: #FFFFFF; /* White background color */
-  border: 2px solid #E74C3C; /* Red border */
+  background-color: #FFFFFF;
+  border: 2px solid #E74C3C;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Style for links on hover */
 a:hover {
-  background-color: #E74C3C; /* Red background color */
-  color: #FFFFFF; /* White text color */
+  background-color: #E74C3C; 
+  color: #FFFFFF;
 }
