@@ -1,47 +1,34 @@
-<!-- Votre fichier HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Excuses for Being Late to Class</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database of address</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1 id="pageTitle">Best Excuses for Being Late to Class</h1>
-  <label for="test">Enter a number between 1 and 20:</label>
-  <input type="number" id="numberInput" placeholder="e.g., 3">
-  <button id="getFactButton">Get An Excuse</button>
+    <h1>Database of address</h1>
+    <button onclick="redirectToCreate()">Create</button>
+    <button onclick="redirectToUpdate()">Update</button>
+    <button onclick="redirectToSelect()">Select</button>
+    <button onclick="redirectToDelete()">Delete</button>
 
-  <p id="factResult"></p>
-  <script src="/script.js"></script>
-  <a href="http://localhost:3000/styles.css">For the css code</a>
-  <a href="http://localhost:3000/bestjoke.html">Best joke ever</a>
-  <script>
-    // Fonction pour générer une couleur aléatoire
-    function getRandomColor() {
-      const letters = '0123456789ABCDEF';
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
+    <script>
+        function redirectToCreate() {
+            window.location.href = "/create.html";
+        }
 
-    // Appliquer des couleurs de texte et de fond aléatoires à chaque élément souhaité
-    const pageTitle = document.getElementById('pageTitle');
-    const numberInput = document.getElementById('numberInput');
-    const getFactButton = document.getElementById('getFactButton');
-    const factResult = document.getElementById('factResult');
-    const test =  document.getElementById('test');
+        function redirectToUpdate() {
+            window.location.href = "/update.html";
+        }
 
+        function redirectToSelect() {
+            window.location.href = "/select.html";
+        }
 
-    pageTitle.style.color = getRandomColor();
-    pageTitle.style.backgroundColor = getRandomColor();
-    numberInput.style.color = getRandomColor();
-    numberInput.style.borderColor = getRandomColor();
-    getFactButton.style.color = getRandomColor(); 
-    factResult.style.color = getRandomColor();
-  </script>
+        function redirectToDelete() {
+            window.location.href = "/delete.html";
+        }
+    </script>
 </body>
 </html>
