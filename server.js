@@ -3,14 +3,12 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.static('public'));
-// Middleware for parsing request bodies
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Replace this with your Knex configuration
 const knexConfig = require('./Knexfile')[process.env.NODE_ENV || 'development'];
 
-// Initialize Knex with the database configuration
 const knex = require('knex')(knexConfig);
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
